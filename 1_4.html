@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Or Fail</title>
+</head>
+<body>
+     <input type="number" id="marks" placeholder="Enter Marks">
+    <button onclick="checkResult()">Check Result</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+        function checkResult() {
+            let marks = parseInt(document.getElementById("marks").value);
+
+            if (marks >= 35) {
+                document.getElementById("result").innerHTML = "Pass";
+            } else {
+                document.getElementById("result").innerHTML = "Fail";
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check pos and Neg</title>
+</head>
+<body>
+
+<input type="number" id="num" placeholder="Enter Marks">
+    <button onclick="checkNumber()">CheckNumber</button>
+
+    <h2 id="result"></h2>
+   <script>
+
+    
+    function checkNumber() {
+    let num = parseInt(document.getElementById("num").value);
+
+    if (num > 0) {
+        document.getElementById("result").innerHTML = "Positive Number";
+    } else if (num < 0) {
+        document.getElementById("result").innerHTML = "Negative Number";
+    } else {
+        document.getElementById("result").innerHTML = "Zero";
+    }
+}
+   </script>
+
+
+
+
+    
+</body>
+</html>
