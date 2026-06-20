@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Odd No</title>
+</head>
+<body>
+
+    <input type="number" id="num">
+
+<button onclick="check()">Check</button>
+
+<h2 id="result"></h2>
+
+<script>
+function check()
+{
+    let num = parseInt(document.getElementById("num").value);
+
+    if(num % 2 == 0)
+    {
+        document.getElementById("result").innerHTML = "Even Number";
+    }
+    else
+    {
+        document.getElementById("result").innerHTML = "Odd Number";
+    }
+}
+</script>
+    
+</body>
+</html>
